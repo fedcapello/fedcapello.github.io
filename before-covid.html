@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Covid@Lombardy &mdash; Before Covid-19</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="fonts/flaticon-covid/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" style="color:#0E65FB;" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    
+              <header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-6 col-xl-2">
+            <a href="index.html" class="mb-0"><div class="mb-0 site-logo">Covid@Lombardy</div></a>
+          </div>
+
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="has-children">
+                    <a href="#" class="nav-link">The results</a>
+                  <ul class="dropdown">
+                    <li><a href="covariate-results.html" class="nav-link">Contributing factors analysis</a></li>
+                    <li><a href="policies-results.html" class="nav-link">Policies analysis</a></li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                    <a href="#" class="nav-link"> <div class="active">Explore the data</div> </a>
+                  <ul class="dropdown">
+                    <li><a href="before-covid.html" class="nav-link">Before Covid</a></li>
+                    <li><a href="after-covid.html" class="nav-link">After Covid</a></li>
+                  </ul>
+                </li>
+                   <li class="has-children">
+                       <a href="#" class="nav-link">The project</a>
+                  <ul class="dropdown">
+                    <li><a href="project-covariate.html" class="nav-link">Contributing factors</a></li>
+                    <li><a href="project-policies.html" class="nav-link">Policies</a></li>
+                  </ul>
+                  </li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3 text-black"></span></a></div>
+
+        </div>
+      </div>
+
+    </header>
+    <footer class="light buttons-footer" style="position:fixed ;bottom: 0;z-index: 999; width:100%; background: white;">
+
+      <div class="container">
+        <div class="row align-items-center" style="align-content: center; justify-content: center;">
+    
+          
+           <div class="icon-filter"><a href="#overview"><img src="images/overview.png" width="40" height="auto" /></a></div>
+           <div class="icon-filter"><a href="#education"><img src="images/education.png" width="40" height="auto" /></a></div>
+           <div class="icon-filter"><a href="#healthcare"><img src="images/healthcare.png" width="40" height="auto" /></a></div>
+           <div class="icon-filter"><a href="#economy"><img src="images/economy.png" width="40" height="auto" /></a></div>
+           <div class="icon-filter"><a href="#population"><img src="images/population.png" width="40" height="auto" /></a></div>
+           <div class="icon-filter"><a href="#mobility"><img src="images/mobility.png" width="40" height="auto" /></a></div>
+           <div class="icon-filter"><a href="#primary_sector"><img src="images/primary_sector.png" width="40" height="auto" /></a></div>
+          </div>
+    
+    
+    
+        </div>
+    
+    </footer>
+
+   
+
+
+
+
+    <div class="hero-v1" id="overview">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-8 text-center mx-auto">
+            <span class="d-block subheading">Before Covid-19</span>
+            <h1 class="heading mb-3">Contributing factors</h1>
+            <p class="mb-5"> Many external factors enabled the Covid-19 propagation in different areas of Europe, making them more exposed than others to quick infection of citizens. But what are the secret paths that affected the contagion the most? Click the buttons at the bottom of the page to explore them!</p>
+          </div>
+        </div>
+
+        <!-- <div class="covariates">
+            <p class="mb-4" style="margin-left:25%;"><a href="before-covid.html" class="btn btn-primary">Overview</a></p>
+            <p class="mb-4"><a href="before-covid-education.html" class="btn btn-primary" >Education</a></p>
+            <p class="mb-4"><a href="before-covid-healthcare.html" class="btn btn-primary">Healthcare</a></p>
+            <p class="mb-4" style="padding-right:20%;"><a href="before-covid-economy.html" class="btn btn-primary">Economy</a></p>
+        </div>
+            <div class="covariates-second">
+                <p class="mb-4"><a href="#" class="btn btn-primary" style="opacity:0; margin-left:13%; cursor: auto;">Invisible button</a></p>
+            <p class="mb-4"><a href="before-covid-population.html" class="btn btn-primary">Population</a></p>
+            <p class="mb-4" ><a href="before-covid-mobility.html" class="btn btn-primary">Mobility</a></p>
+            <p class="mb-4" ><a href="before-covid-primary-sector.html" class="btn btn-primary">Primary sector</a></p>
+        </div> -->
+     </div>
+    </div>
+         
+
+
+    <!-- MAIN -->
+
+
+<div class="visualisations">
+      
+          
+<div class="fade">
+    <div class="site-section" id="education">
+      <div class="container">
+        <div class="row">      
+       <div class="row mb-5">
+          <div class="col-lg-9 mx-auto text-center">
+              <h2 class="mb-6 section-heading">Contributing factors</h2>
+              <p class="mb-4"> <br> To perform our analysis, we clustered European regions in categories of high and low risk, in order to understand why a region belongs to a specific category on the basis of the contributing factors. In particular, as target variable we took the density of COVID-19 cases of each NUTS2 region, displayed below. Together with all the contributing factors, this data allowed us to perform our analysis and understand why certain regions, like Lombardy, have a higher risk of COVID-19 cases. Feel free to explore them all, and use the interactive visualisation to further investigate the contributing factors! <br> <br></p>
+          </div>
+        </div>
+          <div class="col-lg-6 ml-auto">
+        <div class="flourish-embed flourish-map" data-src="visualisation/7269489"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading">Density of COVID-19 cases</h2>
+            <p>The map shows the density of COVID-19 cases normalised over 100.000 inhabitants, between August 2020 and February 2021, what it is considered the second wave of the pandemic. As the graph shows, Lombardy, together with several regions in the north of Italy, witnessed a high number of cases, together with some part of Spain and Belgium. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+<div class="fade">
+    <div class="site-section" id="education">
+      <div class="container">
+        <div class="row">      
+       <div class="row mb-5">
+          <div class="col-lg-9 mx-auto text-center">
+              <h2 class="mb-6 section-heading"><div class="education">Education</div></h2>
+              <p class="mb-4"> <br> The role of schools in the Covid19 spread has been heavily debated. Experts argued that such environment was a perfect vehicle of diffusion since many students attend lectures together in a closed space for a long time, despite masks. For this reason governors were obliged to switch from physical to remote education every time the pandemic context was worsening. We decided to investigate the most relevant Education variables available for the european landscape: scroll down and discover them!<br> <br></p>
+          </div>
+        </div>
+          <div class="col-lg-6 ml-auto">
+        <div class="flourish-embed flourish-map" data-src="visualisation/6817528"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="education">Early leavers from education and training</div></h2>
+            <p>It indicates the percentage of young people (between 18 and 24 years old) who left school, university or training classes after having started them, over the total number of people who joined schools, universities and training. As the graph shows, the highest percentages of early leavers are diffused in impoverished and rural areas, such as Romania, Bulgaria, the south-west of Spain and in the meridional regions of Italy.  </p>
+          </div>
+        </div>
+      </div>
+    </div>
+<hr class="solid">
+    </div>
+
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto">
+        <div class="flourish-embed flourish-map" data-src="visualisation/6817491"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="education">Students enrolled in tertiary education</div></h2>
+            <p>It is the total number of students (independent from sex and age) enrolled in tertiary schools education. The distribution is quite homogeneous across the whole Europe, except for some exceptions like Luxembourg and the northern part of Sweden, due to the low local number of people.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <hr class="solid"> 
+ </div>
+    
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">      
+          <div class="col-lg-6 ml-auto">
+        <div class="flourish-embed flourish-map" data-src="visualisation/6817470"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="education">Partecipation rate in education and training</div></h2>
+            <p>It represents the percentage of people between 25 and 64 years old who, in the last 4 weeks, has participated in educational and training activities. In continental Europe the pattern is homogeneous, whereas Nederland and in particular Sweden present much stronger participation in education than the average.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<hr class="solid">
+    </div>
+
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto">
+                <div class="flourish-embed flourish-map" data-src="visualisation/6817494"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="education">Young people who are unemployed and not in training</div></h2>
+            <p>It indicates the percentage of people from 15 to 24 who are neither studying nor working over the total number of people of that age. The map reflects the strong inequality between northern and southern Europe in educational terms, in fact NEETs are concentrated in Andalusia, south Italy and Dacia. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <hr class="solid"> 
+ </div>
+    
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto">
+               <div class="flourish-embed flourish-map" data-src="visualisation/6817498"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="education">Pupils and students enrollled in education</div></h2>
+            <p>This category provides the total number of students (independent from sex and age) enrolled in school. As the map shows, there is no discrepancy between northern and southern Europe, with the only exception of Deutschland, characterized by lower figures. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+    
+          
+<div class="fade">
+    <div class="site-section" id="healthcare">
+      <div class="container">
+        <div class="row">      
+       <div class="row mb-5">
+          <div class="col-lg-9 mx-auto text-center">
+              <h2 class="mb-6 section-heading"><div class="healthcare">Healthcare</div></h2>
+              <p class="mb-4"> <br> Physicians, nurses and medical volonteers played an heroic role during the pandemic. But, were they adequatly equipped against this dramatic scenario?  We decided to investigate whether healthcare systems throughout european countries had appropriate resources or whether the shortage of equipment could have enforced the mortality by Covid-19. We enlarged the analyses considering the presence of respiratory diseases in the population. Let's scroll down and discover them!<br> <br></p>
+          </div>
+        </div>
+          <div class="col-lg-6 ml-auto">
+        <div class="flourish-embed flourish-map" data-src="visualisation/6817496"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="healthcare">Healthcare personnel</div></h2>
+            <p>This category concerns the health care staff, the ‘manpower’ active in the health care sector (doctors, dentists, nurses, etc.). This contributing factor is one of the most uniform, showing a significant similarity between nations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<hr class="solid">
+    </div>
+
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto">
+        <div class="flourish-embed flourish-map" data-src="visualisation/6817473"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="healthcare">Hospital discharges for respiratory diseases</div></h2>
+            <p>It indicates the number of people who left the hospital after having suffered from respiratory diseases. In continental Europe, the distribution of the variable is quite homogeneous, Sweden instead is the region with the highest discharges for respiratory diseases.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <hr class="solid"> 
+ </div>
+    
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">      
+          <div class="col-lg-6 ml-auto">
+        <div class="flourish-embed flourish-map" data-src="visualisation/6817446"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="healthcare">Available Hospital Beds</div></h2>
+            <p>It is the number of available hospital beds in a region. France and Belgium are characterised by a disposal noticeably larger than other European regions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<hr class="solid">
+    </div>
+
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto">
+                <div class="flourish-embed flourish-map" data-src="visualisation/6817475"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="healthcare">Long term care beds for hundred thousand people</div></h2>
+            <p>It shows the number of long-term beds available in a region for every 100.000 inhabitants. Bulgaria possesses an average which is significantly higher than the other European regions.  </p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+    
+ <div class="fade">
+    <div class="site-section"  id="economy">
+      <div class="container">
+        <div class="row">      
+       <div class="row mb-5">
+          <div class="col-lg-9 mx-auto text-center">
+            <h2 class="mb-6 section-heading"> <div class="economy">Economy </div></h2> 
+              <p class="mb-4"> <br> Managing the pandemic implied managing the trade-off between economy and health. Exploring economic variables is important to investigate whether production activities could have been a vehicle of virulent diffusion due to the mobility and contact among employees. The European landscape is characterised by many industrial districts and professional hubs, dishomogeneously distributed: scroll down and look at them!<br> <br></p>
+          </div>
+        </div>
+          <div class="col-lg-6 ml-auto">
+        <div class="flourish-embed flourish-map" data-src="visualisation/6817480"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+            <h2 class="mb-4 section-heading"> <div class="economy"> Gross domestic product (GDP) </div></h2>
+            <p>The map describes the Gross Domestic Product (GDP) at current market prices. The pattern shown exhibits the lowest figures in eastern Europe, whereas strong peaks in the Scandinavian region and the northern part of the continental regions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<hr class="solid">
+    </div>
+
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto">
+        <div class="flourish-embed flourish-map" data-src="visualisation/6817502"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+            <h2 class="mb-4 section-heading"> <div class="economy"> Compensation per employee </div></h2>
+            <p>This map shows the sum of the compensations of all the employees of a certain area. The largest remunerations for employees are funded in the northern part of Europe, particularly in Luxembourg, Sweden and Denmark. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <hr class="solid"> 
+ </div>
+    
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">      
+          <div class="col-lg-6 ml-auto">
+       <div class="flourish-embed flourish-map" data-src="visualisation/6817468"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+            <h2 class="mb-4 section-heading"><div class="economy"> Unemployment rate</div></h2>
+            <p>It reports the unemployment rate in a region. Europe is known for the strong economic inequalities that are spread around the continent, especially between the northern part and the Mediterranean one. This contributing factor in fact, stresses this phenomenon, exhibiting the largest rates in Spain and south Italy. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+<hr class="solid">
+    </div>
+
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto">
+                <div class="flourish-embed flourish-map" data-src="visualisation/6817483"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+            <h2 class="mb-4 section-heading"><div class="economy">Thousands of hours worked</div></h2>
+            <p>It shows the sum of the hours worked by employees in a certain area. The distribution of this contributing factor is quite uniform in the whole continent, except for the Luxembourg case, where the highest value is achieved and it is significantly larger than the average.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <hr class="solid"> 
+ </div>
+    
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto">
+               <div class="flourish-embed flourish-map" data-src="visualisation/6817499"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+            <h2 class="mb-4 section-heading"><div class="economy">Real growth rate of regional gross value</div></h2>
+            <p>GVA is an indicator of the economic activity of a country or a region. It reflects the total value of all goods and services produced less the value of goods and services used for intermediate consumption in their production. It is expressed as percentage change on the previous period. Such contributing factor reveals how much the economy of a country is growing compared to the previous year. Thus, the map enables to detect the fastest-growing nations, that are Romania and Estonia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+    
+   
+    <div class="fade">
+    <div class="site-section"  id="population">
+      <div class="container">
+        <div class="row">      
+       <div class="row mb-5">
+          <div class="col-lg-9 mx-auto text-center">
+              <h2 class="mb-6 section-heading"><div class="population">Population</div></h2>
+              <p class="mb-4"> <br> A secret path that could lead to the explanation of different mortality and diffusion of Covid-19 deals with population. Since that virus is transmitted via air, the distribution and composition of citizens around Europe could generate valuable insights. Exploring demographic variables can detect pure relationships between Covid and local regions, since governors couldn't regulated them, except for social distance rules. So, scroll down and have a look!<br> <br></p>
+          </div>
+            <div class="col-lg-6 ml-auto">
+       <div class="flourish-embed flourish-map" data-src="visualisation/6817477"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="population">Life expectancy</div></h2>
+            <p>It represents the life expectancy for a person. The greatest values are in the north of Italy, with an average around 84.3 years, and the central part of Spain, showing the highest life expectancy in Europe with 85.8 years.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <hr class="solid"> 
+ </div> 
+    </div>
+    
+     <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto">
+             <div class="flourish-embed flourish-map" data-src="visualisation/6817482"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="population">Population density</div></h2>
+            <p>It indicates the density of population in each region. This contributing factor highlights a strong inhomogeneous pattern across European nations, underlying the distribution of urban areas, that largelt affect the local population density.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <hr class="solid"> 
+ </div>
+    
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">      
+          <div class="col-lg-6 ml-auto">
+       <div class="flourish-embed flourish-map" data-src="visualisation/6817532"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="population">Crude death rate</div></h2>
+            <p>It describes mortality in relation to the total population. Expressed in deaths per 100,000 inhabitants, it is calculated as the number of deaths recorded in the population for a given period divided by population in the same period and then multiplied by 100,000. The regions that present the largest values in death rate are concentrated in eastern Europe and Lithuania.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<hr class="solid">
+    </div>
+
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto">
+              <div class="flourish-embed flourish-map" data-src="visualisation/6817447"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="population">Deaths</div></h2>
+            <p>It shows the number of deaths in each region. This pattern shows a similar distribution to the death crude rate one, in fact the largest figures are mainly present in the eastern Europe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+    
+    <div class="fade">
+    <div class="site-section" id="mobility">
+      <div class="container">
+        <div class="row">      
+       <div class="row mb-5">
+          <div class="col-lg-9 mx-auto text-center">
+              <h2 class="mb-6 section-heading"><div class="mobility">Mobility</div></h2>
+              <p class="mb-4"> <br> Mobility has been strongly restricted by governors during the pandemic: only some types of journeys were allowed and the capacity of public transport was heavily reduced.  The role of mobility is significantly relevant in the diffusion process, both for the quantity of people in the same closed environment and for the international movements of potential infected travellers allowing Covid-19 to become global. Scroll down and get some insights!<br> <br></p>
+          </div>
+        </div>
+          <div class="col-lg-6 ml-auto">
+       <div class="flourish-embed flourish-map" data-src="visualisation/6817466"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="mobility">Air passengers</div></h2>
+            <p>The map displays the number of passengers carried, in that region, per thousand of people. The distribution is really wide, ranging from 0.43 to 8581.8, showing a dissimilar behaviour across Europe. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+<hr class="solid">
+    </div>
+
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto">
+        <div class="flourish-embed flourish-map" data-src="visualisation/6817488"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="mobility">Stocks of vehicles</div></h2>
+            <p>This contributing factor reports the total number of vehicles present in a region. This contributing factor highlights a distribution difference between continental Europe and southern Europe: Italy and Portugal (the highest in the series) show a significant degree of vehicles, whereas Germany is characterised by the lowest record.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+    
+<div class="fade">
+    <div class="site-section" id="primary_sector">
+      <div class="container">
+        <div class="row">      
+       <div class="row mb-5">
+          <div class="col-lg-9 mx-auto text-center">
+              <h2 class="mb-6 section-heading"><div class="primary-sector">Primary sector</div></h2>
+              <p class="mb-4"> <br> Covid-19 is a virus that spreads out by air: data about the primary sector are relevant since agricultural and breeding activities produce natural gases that can facilitate the virulent diffusion. Let's scroll down and discover primary sector in Europe!<br> <br></p>
+          </div>
+        </div>
+          <div class="col-lg-6 ml-auto">
+        <div class="flourish-embed flourish-map" data-src="visualisation/6817448"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="primary-sector">Employed Agricultural Areas</div></h2>
+            <p>The map represents the share of the utilized agricultural area (UAA) occupied by the main agricultural land uses (arable land, permanent grassland and land under permanent crops). The variety of the geographic territories in the European continent is mirrored by the distribution of this contributing factors, highlighting interesting differences between nations: Spain and Portugal achieve the largest utilized surface in the whole continent.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<hr class="solid">
+    </div>
+
+    <div class="fade">
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto">
+        <div class="flourish-embed flourish-map" data-src="visualisation/6817419"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+              <h2 class="mb-4 section-heading"><div class="primary-sector">Farm Labour Force</div></h2>
+            <p>It is expressed in persons and in Annual Work Units (AWU) where one AWU corresponds to the work performed by one person occupied on a full-time basis. The employment of individuals in the primary sector is especially diffused in the eastern regions of Europe, like Bulgaria and Romania, characterised by a significant gradient with respect to northern areas, due to the differences related to the economy and geographic territory.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+    
+
+
+</div>
+
+    <div class="fade">      
+ <div class="site-section">
+      <div class="container">
+         <div class="row mb-5">
+          <div class="col-lg-7 mx-auto text-center">
+            <span class="d-block subheading">See for yourself</span>
+            <h2 class="mb-4 section-heading">Explore our data</h2>
+          </div>
+        </div>
+          <div class="row">
+          <div class="col-md-6 blog-content" style="margin-left:11%;">
+            <div class="row mb-5">
+                <p class="lead">Are you interested in finding out more on how the contributing factors helped the virus spread across Europe? Download <u><b style="color:#0e65fb;font-weight: 700;"><a href="https://www.kaggle.com/federicocapello/covidlombardy">our dataset</a></b></u> to learn what happened near you and around the continent.</p>
+                <p>Our data are entirely open source, feel free to dowload it and use it for your own analysis and research. Our aim is to make information available to the public for free, in order build free and reliable knowledge on this ongoing pandemic. For further information, you can also download <u><b style="color:#0e65fb;font-weight:500;"><a href="https://drive.google.com/file/d/1pWOjwNJUtNQBqxQ1yVxrp0dpz0h3Rxfp/view?usp=sharing">our report</a></b></u>, to find out more about our research.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4 sidebar">
+                <div class="sidebar-box">
+                  <h3>Our sources</h3>
+                  <p>The data used in our visualizations and analyses is public: we aggregated heterogeneous information retrieved from the <b style="color:#0e65fb;font-weight: 700;">Eurostat database</b>, the largest open databank in Europe, powered and directed by the European Commission.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+</div> 
+
+
+
+    
+     <div class="site-footer">
+      <div class="container">
+          <div class="fade">  
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 class="footer-heading mb-4"><u>Covid@Lombardy</u></h2>
+            <p>A data-driven multisciplinary project, aimed to discover the secret paths of Covid-19 diffusion and how to restrain it effectively.</p>
+            <div class="my-3">
+             <a href="mailto: covidatlombardy@gmail.com" class="pl-0 pr-3"><span style="color:#0E65FB"><span class="icon-envelope-o"></span></span></a>
+              <a href="https://www.youtube.com/channel/UCDIpTNRuEk0NpMmiFYLiAEA" class="pl-3 pr-3"><span style="color:#0E65FB"><span class="icon-youtube"></span></span></a>
+              <a href="#" class="pl-3 pr-3"><span style="color:#0E65FB"><span class="icon-linkedin"></span></span></a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-4">
+                  <h2 class="footer-heading mb-4"><u>Our research</u></h2>
+                <ul class="list-unstyled">
+                  <li><a href="covariate-results.html">Contributing factors</a></li>
+                  <li><a href="policies-results.html">Policies</a></li>
+                  <li><a href="https://www.kaggle.com/federicocapello/covidlombardy">Contributing factors dataset</a></li>
+                  <li><a href="https://www.kaggle.com/federicocapello/covidlombardy?select=policies.csv">Policies dataset</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <h2 class="footer-heading mb-4"><u>The project</u></h2>
+                <ul class="list-unstyled">
+                  <li><a href="project-covariate.html">Contributing factors research</a></li>
+                  <li><a href="project-policies.html">Policies research</a></li>
+                  <li><a href="https://drive.google.com/file/d/1pWOjwNJUtNQBqxQ1yVxrp0dpz0h3Rxfp/view?usp=sharing">Download our report</a></li>
+                  <li><a href="about.html">About us </a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <h2 class="footer-heading mb-4"><u>Resources</u></h2>
+                <ul class="list-unstyled">
+                  <li><a href="https://www.asp-poli.it">ASP</a></li>
+                  <li><a href="https://onehealth.ifas.ufl.edu">One Health Center</a></li>
+                  <li><a href="https://www.isi.it/en/home">ISI</a></li>
+                  <li><a href="https://home.cern">CERN</a></li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+        </div>
+ <!-- .site-wrap -->
+
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.countdown.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.fancybox.min.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+      <script src="js/isotope.pkgd.min.js"></script>
+
+
+      <script src="js/main.js"></script>
+
+
+    </body>
+    </html>

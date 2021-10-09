@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Covid@Lombardy &mdash; Contributing factor &mdash; results</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="fonts/flaticon-covid/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" style="color:#0E65FB;" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    
+<header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-6 col-xl-2">
+            <a href="index.html" class="mb-0"><div class="mb-0 site-logo">Covid@Lombardy</div></a>
+          </div>
+
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="has-children">
+                    <a href="#" class="nav-link"><div class="active">The results</div></a>
+                  <ul class="dropdown">
+                    <li><a href="covariate-results.html" class="nav-link"> Contributing factors analysis</a></li>
+                    <li><a href="policies-results.html" class="nav-link">Policies analysis</a></li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                    <a href="#" class="nav-link"> Explore the data </a>
+                  <ul class="dropdown">
+                    <li><a href="before-covid.html" class="nav-link">Before Covid</a></li>
+                    <li><a href="after-covid.html" class="nav-link">After Covid</a></li>
+                  </ul>
+                </li>
+                   <li class="has-children">
+                       <a href="#" class="nav-link">The project</a>
+                  <ul class="dropdown">
+                    <li><a href="project-covariate.html" class="nav-link">Contributing factors</a></li>
+                    <li><a href="project-policies.html" class="nav-link">Policies</a></li>
+                  </ul>
+                  </li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3 text-black"></span></a></div>
+
+        </div>
+      </div>
+
+    </header>
+
+    <div class="hero-v1">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-8 text-center mx-auto">
+            <span class="d-block subheading">The results <br> </span>
+            <h1 class="heading mb-3" style="margin-top:1%;">Which contributing factors were correlated with the spread of the virus?</h1>
+            <p class="mb-5" style="margin-top:4%;"> By confronting all the external features related to European regions, we managed to find those that directly influenced the pandemic, and that may cause a higher risk of cases in the future.<br>Scroll down to find out which ones! </p>
+          </div>
+        </div>
+     </div>
+    </div>
+         
+
+
+    <!-- MAIN -->
+
+
+<div class="visualisations"> 
+    <div class="site-section">
+      <div class="container">
+        <div class="row">      
+       <div class="row mb-5">
+          <div class="col-lg-10 mx-auto text-center">
+              <h2 class="mb-6 section-heading"> Contributing factors analysis</h2>
+              <p class="mb-5"> <br>  <b style="color:#0e65fb;">Lombardy</b> among all European regions registered <b style="color:#0e65fb;"> one of the highest number of COVID-19 cases and deaths related to the virus</b>. Therefore, it was natural to wonder if some pre-existing factors may have influenced the spread of the pandemic in this specific area instead of others. <br> <br></p>
+          </div> 
+           <div class="col-lg-6 ml-auto">
+               <div class="flourish-embed flourish-map" data-src="visualisation/7269437"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        </div>
+            <div class="col-lg-4 mr-auto">
+              <p class="mb-5"> By employing a classification method, we managed to define the <b style="color:#0e65fb;">level of risk (high or low)</b> for several European regions, as shown in the graph down below. After having classified each region, we needed to understand why a specific region belongs to one of the two risk-class. We used the model <b style="color:#0e65fb;">random forest</b> to investigate the classification  through the contributing factors.<br> <br></p>
+          </div> 
+        <div class="col-lg-10 mx-auto text-center">
+            <div class="flourish-embed flourish-scatter" data-src="visualisation/7357545"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        </div>
+           </div>
+                 </div> 
+                  <div class="row">      
+          <div class="row mb-5">
+        <div class="col-lg-10 mx-auto text-center">
+            <p> </p>
+           <p class="mb-5"> The results of the application of ANOVA methods to the NUTS2 regions, comparing to the levels of the different features, led to some <b style="color:#0e65fb;">interesting results</b>. For instance, <b style="color:#0e65fb;">contributing factors related to people proximity (such number of people present in schools and workplaces) are the most impactful</b> for the spread of COVID-19 cases, as predicted by the literature. Since the transmission of the virus occurs mainly through the respiratory route, contacts between people during their daily activities are thus an enhancer for the COVID-19 transmission. </p>
+        </div>
+         </div> 
+           <div class="row">  
+            <div class="row mb-5">
+          <div class="col-lg-10 mx-auto text-center">
+        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/7349742"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+          <div class="col-lg-10 mx-auto text-center">
+              <p class="mb-5"><br><br><b style="color:#0e65fb;">Thousands of hours worked by employees, young people neither in employment nor in education and number of students enrolled</b> are the most significant features. Working activities, schools and little young unemployment are proxies for people's movements and contacts during their daily activities and regions in which people move the most are also the ones with higher density of cases. </p>
+              <p class="mb-5">On the other hand, <b style="color:#0e65fb;">life expectancy</b> is also a significant feature for the model. Regions with life expectancy higher than the average show a higher density of cases. As predicted by the literature, symptoms appear more frequently on elderly people that are tested and kept under control, while the majority of young people who contract COVID-19 remain asymptomatic and thus not tested. <br> </p>
+               </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+     </div>
+      
+<div class="visualisations"> 
+    <div class="site-section bg-primary-light">
+      <div class="container">
+        <div class="row">      
+       <div class="row mb-5">
+          <div class="col-lg-10 mx-auto text-center">
+              <p class="lead"> <br><br> The most relevant contributing factors, as shown by the graph, are the <strong style="color:#0e65fb; font-weight: 700;"> Thousand of hours worked</strong>, <b style="color:#0e65fb;font-weight: 700;">Life Expectancy</b>, followed by the  <b style="color:#0e65fb;font-weight: 700;">the numbers of people in or out of education</b>, proving that people mobility and interaction with each other are the most impacting features, together with the <b style="color:#0e65fb;font-weight: 700;">average age of the population</b> in a specific area. If you want to discover which <b style="color:#0e65fb;font-weight: 700;">anti-COVID-19 policies</b> were the most effective against the pandemic, click <u><b style="color:#0e65fb;font-weight: 700;"><a href="policies-results.html">here</a></b></u> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    
+
+
+
+</div>
+
+    <div class="fade">      
+ <div class="site-section">
+      <div class="container">
+         <div class="row mb-5">
+          <div class="col-lg-7 mx-auto text-center">
+            <span class="d-block subheading">See for yourself</span>
+            <h2 class="mb-4 section-heading">Explore our data</h2>
+          </div>
+        </div>
+          <div class="row">
+          <div class="col-md-6 blog-content" style="margin-left:11%;">
+            <div class="row mb-5">
+                <p class="lead">Are you interested in finding out more on how the contributing factors helped the virus spread across Europe? Download <u><b style="color:#0e65fb;font-weight: 700;"><a href="https://www.kaggle.com/federicocapello/covidlombardy">our dataset</a></b></u> to learn what happened near you and around the continent.</p>
+                <p>Our data are entirely open source, feel free to dowload it and use it for your own analysis and research. Our aim is to make information available to the public for free, in order build free and reliable knowledge on this ongoing pandemic. For further information, you can also download <u><b style="color:#0e65fb;font-weight:500;"><a href="https://drive.google.com/file/d/1pWOjwNJUtNQBqxQ1yVxrp0dpz0h3Rxfp/view?usp=sharing">our report</a></b></u>, to find out more about our research.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4 sidebar">
+                <div class="sidebar-box">
+                  <h3>Our sources</h3>
+                  <p>The data used in our visualizations and analyses is public: we aggregated heterogeneous information retrieved from the <b style="color:#0e65fb;font-weight:500;">Eurostat database</b>, the largest open databank in Europe, powered and directed by the European Commission.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+</div> 
+
+    
+      <div class="site-footer">
+      <div class="container">
+          <div class="fade">  
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 class="footer-heading mb-4"><u>Covid@Lombardy</u></h2>
+            <p>A data-driven multisciplinary project, aimed to discover the secret paths of Covid-19 diffusion and how to restrain it effectively.</p>
+            <div class="my-3">
+                <a href="mailto: covidatlombardy@gmail.com" class="pl-0 pr-3"><span style="color:#0E65FB"><span class="icon-envelope-o"></span></span></a>
+              <a href="https://www.youtube.com/channel/UCDIpTNRuEk0NpMmiFYLiAEA" class="pl-3 pr-3"><span style="color:#0E65FB"><span class="icon-youtube"></span></span></a>
+              <a href="#" class="pl-3 pr-3"><span style="color:#0E65FB"><span class="icon-linkedin"></span></span></a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-4">
+                  <h2 class="footer-heading mb-4"><u>Our research</u></h2>
+                <ul class="list-unstyled">
+                  <li><a href="covariate-results.html">Contributing factors</a></li>
+                  <li><a href="policies-results.html">Policies</a></li>
+                  <li><a href="https://www.kaggle.com/federicocapello/covidlombardy">Contributing factors dataset</a></li>
+                  <li><a href="https://www.kaggle.com/federicocapello/covidlombardy?select=policies.csv">Policies dataset</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <h2 class="footer-heading mb-4"><u>The project</u></h2>
+                <ul class="list-unstyled">
+                  <li><a href="project-covariate.html">Contributing factors research</a></li>
+                  <li><a href="project-policies.html">Policies research</a></li>
+                  <li><a href="https://drive.google.com/file/d/1pWOjwNJUtNQBqxQ1yVxrp0dpz0h3Rxfp/view?usp=sharing">Download our report</a></li>
+                  <li><a href="about.html">About us </a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <h2 class="footer-heading mb-4"><u>Resources</u></h2>
+                <ul class="list-unstyled">
+                  <li><a href="https://www.asp-poli.it">ASP</a></li>
+                  <li><a href="https://onehealth.ifas.ufl.edu">One Health Center</a></li>
+                  <li><a href="https://www.isi.it/en/home">ISI</a></li>
+                  <li><a href="https://home.cern">CERN</a></li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+        </div>
+ <!-- .site-wrap -->
+
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.countdown.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.fancybox.min.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+      <script src="js/isotope.pkgd.min.js"></script>
+
+
+      <script src="js/main.js"></script>
+
+
+    </body>
+    </html>
