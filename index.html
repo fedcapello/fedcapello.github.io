@@ -30,7 +30,9 @@
     window.onload=function(){
     var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
     if (mobile) {
-        alert("For the best experience, please visit this website on a PC");              
+        alert("For the best experience, please visit this website on a PC");  
+        // Simulate an HTTP redirect:
+        window.location.replace("no-mobile.html");            
     } else {
 
     }
